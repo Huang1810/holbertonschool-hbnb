@@ -8,13 +8,13 @@ from models.place import Place
 data_manager = DataManager()
 
 
-user = User(email="youssef@gmail.com", password="iamyoussef")
+user = User(email="ahmed@gmail.com", password="azerty")
 data_manager.save(user)
 
 retrieved_user = data_manager.get(user.id, 'User')
 print(retrieved_user.email)
 
-user.password = "boughanmi"
+user.password = "tian"
 data_manager.user(user)
 
 data_manager.delete(user.id, 'User')
